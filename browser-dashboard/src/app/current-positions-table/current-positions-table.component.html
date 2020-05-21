@@ -1,0 +1,94 @@
+<h2>Current Positions</h2>
+
+<!-- <p>You open positions:</p> -->
+
+<table>
+
+    <th>
+        <h3>
+            Ticker
+        </h3>
+    </th>
+    <th>
+        <h3>
+            Asset
+        </h3>
+    </th>
+    <th>
+        <h3>
+            Long or Short
+        </h3>
+    </th>
+    <th>
+        <h3>
+            # of Shares
+        </h3>
+    </th>
+    <th>
+        <h3>
+         Purchase Price per Share ($)
+        </h3>
+    </th>
+    <th>
+        <h3>
+        Current Price per Share ($)
+        </h3>
+    </th>
+    <th>
+        <h3>
+        % Change From Purchase
+        </h3>
+    </th>
+    <th>
+        <h3>
+        Activate Gains Locker
+        </h3>
+    </th>
+    <th>
+        <h3>
+        % Move To Exit
+        </h3>
+    </th>
+    <th>
+        <h3>
+            Recalc Frequency
+        </h3>
+    </th>
+    <th>
+        <h3>
+            Current Exit Price
+        </h3>
+    </th>
+    <th>
+        <h3>
+            Asset
+        </h3>
+    </th>
+
+    <!-- <tr *ngFor="let position in this.positions">
+        <h2>hello</h2>
+        <td>{{ position.stock }}</td>
+        <td>{{ position.stock }}</td>
+        <td>{{ position.stock }}</td>
+        <td>{{ position.longOrShort }}</td>
+    </tr> -->
+
+    <tr *ngFor="let position of positions">
+        <td>
+
+            <h2>{{position.stock}}</h2>
+        </td>
+        <td>
+            <h2>{{position.longOrShort}}</h2>
+        </td>
+
+
+    </tr>
+    <!-- <debug></debug> -->
+
+    <pre>
+        {{positions}}
+        <!-- {{JSON.stringify(positions)}} -->
+    </pre>
+
+</table>
